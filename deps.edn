@@ -1,5 +1,9 @@
 {:deps {org.clojure/data.priority-map {:mvn/version "0.0.10"}
         aysylu/loom {:mvn/version "1.0.2"}
-        dorothy/dorothy {:mvn/version "0.0.6"}
+        ;; This forked version of dorothy library has a small fix for
+        ;; this issue: https://github.com/daveray/dorothy/issues/18
+        dorothy/dorothy {:git/url "https://github.com/jafingerhut/dorothy"
+                         :sha "b1e5e70392960931d42fbb19012990f1bb081373"}
+        ;;dorothy/dorothy {:mvn/version "0.0.6"}
         com.rpl/specter {:mvn/version "1.1.2"}
         potemkin/potemkin {:mvn/version "0.4.5"}}}
